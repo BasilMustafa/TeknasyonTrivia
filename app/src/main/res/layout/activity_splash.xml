@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bgColor"
+    android:layout_height="wrap_content"
+    tools:context="com.basil.teknasiyontrivia.ui.main.MainActivity">
+    <TextView
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:id="@+id/question_num"
+        android:layout_width="112dp"
+        android:layout_height="72dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:id="@+id/wild_card"
+        android:layout_width="112dp"
+        android:layout_height="72dp" />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        android:layout_centerInParent="true"
+        android:layout_width="112dp"
+        android:layout_height="112dp" />
+    <ImageView
+        android:src="@drawable/offline"
+        android:tint="@color/colorAccent"
+        android:visibility="gone"
+        android:id="@+id/offline_icon"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/loading_message"
+        style="@style/AppTheme.LoadingMessageStyle"
+        android:text="@string/waiting_for_start"
+        android:layout_below="@id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/question_num"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Teknasiyon Trivia</string>
+    <string name="waiting_for_start">Waiting for the game to Start</string>
+    <string name="no_connection">No Internet Connection.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wild_card_text">Wild Card \n %1$d/%2$d </string>
+    <string name="question_text">Question \n %1$d/%2$d </string>
+    <string name="use_wild_card_message">You have wildcard(s), would you like to use one?</string>
+    <string name="use_wild_card">Use Wild Card</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="game_results">The Final Results of the Game</string>
+
+</resources>

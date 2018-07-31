@@ -1,0 +1,37 @@
+<layout>
+    <data>
+        <variable
+            name="question"
+            type="com.basil.teknasiyontrivia.model.Question"/>
+    </data>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    tools:context="com.basil.teknasiyontrivia.ui.main.QuestionFragment">
+    <TextView
+        android:text="@{question.questionText}"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="48dp"
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="140dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/question_text"
+        android:orientation="vertical"
+        android:id="@+id/answers_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="400dp"/>
+</RelativeLayout>
+</ScrollView>
+</layout>
